@@ -3,145 +3,104 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Favaro – Logo, fein & minimalistisch</title>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+<title>Favaro – Wortmarke im Bolt-Stil</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800;900&family=Poppins:wght@300;400;600;700&family=Sora:wght@300;400;700;800&family=Space+Grotesk:wght@400;700&family=Outfit:wght@300;400;700;800&family=Lexend:wght@300;400;700;800&display=swap" rel="stylesheet" />
 <style>
   :root{
-    --ink:#2b2925; --stone:#b8a582; --gold:#a98d5b; --muted:#918a7d;
-    --line:#ece5da; --soft:#f8f5ef; --cream:#f3efe7;
-    --fh:"Manrope",sans-serif; --fb:"Inter",sans-serif;
+    --ink:#232019; --stone:#9b917f; --gold:#a98d5b; --muted:#9b917f;
+    --line:#e7e0d4; --soft:#f4f0e9; --cream:#f4f0e9;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:var(--fb);background:#fff;color:var(--ink);padding:46px;max-width:1120px}
-  h1{font-family:var(--fh);font-weight:700;font-size:1.9rem;letter-spacing:-.03em;margin-bottom:4px}
-  .lead{color:var(--muted);margin-bottom:38px;font-size:.95rem}
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-  .tile{border:1px solid var(--line);border-radius:18px;padding:40px 26px 26px;display:flex;
-        flex-direction:column;align-items:center;justify-content:flex-start;min-height:210px;text-align:center;position:relative;gap:22px}
-  .no{position:absolute;top:12px;left:16px;font-size:.7rem;font-weight:700;color:var(--stone);font-family:var(--fh)}
-  .ttl{position:absolute;top:12px;right:16px;font-size:.66rem;color:var(--muted)}
-  .mark{height:56px;display:flex;align-items:center;justify-content:center}
-  .wm{display:flex;flex-direction:column;align-items:center;line-height:1}
-  .wm .name{font-family:var(--fh);font-weight:600;font-size:1.5rem;letter-spacing:.005em;color:var(--ink)}
-  .wm .tag{font-family:var(--fb);font-size:.52rem;font-weight:500;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);margin-top:8px}
-  .darkstrip{margin-top:34px}
-  .darkgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-  .tile.d{background:#2b2925;border-color:transparent}
-  .tile.d .wm .name{color:#fff}
-  .tile.d .wm .tag{color:var(--stone)}
+  body{font-family:"Outfit",sans-serif;background:#fff;color:var(--ink);padding:46px;max-width:1120px}
+  h1{font-family:"Sora",sans-serif;font-weight:800;font-size:1.9rem;letter-spacing:-.03em;margin-bottom:4px}
+  .lead{color:var(--muted);margin-bottom:36px;font-size:.95rem}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .tile{border:1px solid var(--line);border-radius:16px;padding:40px 40px 30px;background:var(--cream);position:relative;min-height:170px;display:flex;flex-direction:column;justify-content:center}
+  .tile.plain{background:#fff}
+  .no{position:absolute;top:12px;left:18px;font-size:.7rem;font-weight:700;color:var(--stone);font-family:"Sora",sans-serif}
+  .ttl{position:absolute;top:12px;right:18px;font-size:.66rem;color:var(--muted)}
+  .lock{display:inline-block}
+  .z{display:block;color:var(--muted);text-transform:none;margin-left:.28em}
+  .w{display:block;color:var(--ink);line-height:.9}
+  .tag{font-size:.55rem;font-weight:500;letter-spacing:.26em;text-transform:uppercase;color:var(--muted);margin-top:14px}
 </style>
 </head>
 <body>
-  <h1>Favaro — fein &amp; minimalistisch</h1>
-  <p class="lead">Sechs zarte Linien-Zeichen · dünne Striche, viel Weißraum · Palette: Anthrazit &amp; Champagner</p>
+  <h1>Favaro — Wortmarke im Bolt-Stil</h1>
+  <p class="lead">Kräftig &amp; geometrisch · „Zahnarzt" fein darüber · verschiedene Schriften zur Auswahl</p>
 
   <div class="grid">
 
-    <!-- 1 Monoline F -->
+    <!-- A Montserrat -->
     <div class="tile">
-      <span class="no">1</span><span class="ttl">Monolinien-F</span>
-      <div class="mark">
-        <svg width="34" height="50" viewBox="0 0 36 50" fill="none" stroke-linecap="round">
-          <path d="M11 4V46" stroke="#2b2925" stroke-width="1.6"/>
-          <path d="M11 4H31" stroke="#2b2925" stroke-width="1.6"/>
-          <path d="M11 23H26" stroke="#b8a582" stroke-width="1.6"/>
-        </svg>
+      <span class="no">A</span><span class="ttl">Montserrat</span>
+      <div class="lock">
+        <span class="z" style="font-family:'Montserrat';font-weight:400;font-size:1.15rem;letter-spacing:.34em">Zahnarzt</span>
+        <span class="w" style="font-family:'Montserrat';font-weight:800;font-size:3.7rem;letter-spacing:.02em">FAVARO</span>
       </div>
-      <div class="wm"><span class="name">Favaro</span><span class="tag">Zahnarzt · Balsthal</span></div>
     </div>
 
-    <!-- 2 Sunrise -->
+    <!-- B Poppins -->
     <div class="tile">
-      <span class="no">2</span><span class="ttl">Sonnenaufgang</span>
-      <div class="mark">
-        <svg width="60" height="40" viewBox="0 0 56 38" fill="none" stroke-linecap="round">
-          <path d="M4 32H52" stroke="#2b2925" stroke-width="1.5"/>
-          <path d="M10 32a18 18 0 0 1 36 0" stroke="#2b2925" stroke-width="1.5"/>
-          <path d="M19 32a9 9 0 0 1 18 0" stroke="#b8a582" stroke-width="1.5"/>
-        </svg>
+      <span class="no">B</span><span class="ttl">Poppins</span>
+      <div class="lock">
+        <span class="z" style="font-family:'Poppins';font-weight:300;font-size:1.15rem;letter-spacing:.34em">Zahnarzt</span>
+        <span class="w" style="font-family:'Poppins';font-weight:700;font-size:3.5rem;letter-spacing:.01em">FAVARO</span>
       </div>
-      <div class="wm"><span class="name">Favaro</span><span class="tag">Zahnarzt · Balsthal</span></div>
     </div>
 
-    <!-- 3 Open ring + dot -->
+    <!-- C Sora -->
     <div class="tile">
-      <span class="no">3</span><span class="ttl">Offener Ring</span>
-      <div class="mark">
-        <svg width="50" height="50" viewBox="0 0 48 48" fill="none" stroke-linecap="round">
-          <path d="M29.2 4.7A20 20 0 1 1 18.8 4.7" stroke="#2b2925" stroke-width="1.6"/>
-          <circle cx="24" cy="3.4" r="2.5" fill="#b8a582"/>
-        </svg>
+      <span class="no">C</span><span class="ttl">Sora</span>
+      <div class="lock">
+        <span class="z" style="font-family:'Sora';font-weight:300;font-size:1.1rem;letter-spacing:.34em">Zahnarzt</span>
+        <span class="w" style="font-family:'Sora';font-weight:800;font-size:3.4rem;letter-spacing:0">FAVARO</span>
       </div>
-      <div class="wm"><span class="name">Favaro</span><span class="tag">Zahnarzt · Balsthal</span></div>
     </div>
 
-    <!-- 4 Arch / portal -->
+    <!-- D Space Grotesk -->
     <div class="tile">
-      <span class="no">4</span><span class="ttl">Bogen / Portal</span>
-      <div class="mark">
-        <svg width="40" height="50" viewBox="0 0 40 50" fill="none" stroke-linecap="round">
-          <path d="M8 48V22a12 12 0 0 1 24 0v26" stroke="#2b2925" stroke-width="1.6"/>
-          <circle cx="20" cy="12" r="2.4" fill="#b8a582"/>
-        </svg>
+      <span class="no">D</span><span class="ttl">Space Grotesk</span>
+      <div class="lock">
+        <span class="z" style="font-family:'Space Grotesk';font-weight:400;font-size:1.15rem;letter-spacing:.32em">Zahnarzt</span>
+        <span class="w" style="font-family:'Space Grotesk';font-weight:700;font-size:3.6rem;letter-spacing:0">FAVARO</span>
       </div>
-      <div class="wm"><span class="name">Favaro</span><span class="tag">Zahnarzt · Balsthal</span></div>
     </div>
 
-    <!-- 5 Leaf / lens -->
+    <!-- E Outfit -->
     <div class="tile">
-      <span class="no">5</span><span class="ttl">Blatt / Linse</span>
-      <div class="mark">
-        <svg width="44" height="50" viewBox="0 0 44 48" fill="none" stroke-linecap="round">
-          <path d="M22 5C34 14 34 34 22 43" stroke="#2b2925" stroke-width="1.6"/>
-          <path d="M22 5C10 14 10 34 22 43" stroke="#b8a582" stroke-width="1.6"/>
-        </svg>
+      <span class="no">E</span><span class="ttl">Outfit</span>
+      <div class="lock">
+        <span class="z" style="font-family:'Outfit';font-weight:300;font-size:1.2rem;letter-spacing:.36em">Zahnarzt</span>
+        <span class="w" style="font-family:'Outfit';font-weight:700;font-size:3.7rem;letter-spacing:.01em">FAVARO</span>
       </div>
-      <div class="wm"><span class="name">Favaro</span><span class="tag">Zahnarzt · Balsthal</span></div>
     </div>
 
-    <!-- 6 Gem / diamond -->
+    <!-- F Lexend -->
     <div class="tile">
-      <span class="no">6</span><span class="ttl">Facette / Gem</span>
-      <div class="mark">
-        <svg width="44" height="50" viewBox="0 0 44 48" fill="none" stroke-linejoin="round" stroke-linecap="round">
-          <path d="M22 4 40 24 22 44 4 24Z" stroke="#2b2925" stroke-width="1.6"/>
-          <path d="M13 24 22 14l9 10" stroke="#b8a582" stroke-width="1.5"/>
-        </svg>
+      <span class="no">F</span><span class="ttl">Lexend</span>
+      <div class="lock">
+        <span class="z" style="font-family:'Lexend';font-weight:300;font-size:1.1rem;letter-spacing:.32em">Zahnarzt</span>
+        <span class="w" style="font-family:'Lexend';font-weight:700;font-size:3.4rem;letter-spacing:0">FAVARO</span>
       </div>
-      <div class="wm"><span class="name">Favaro</span><span class="tag">Zahnarzt · Balsthal</span></div>
     </div>
 
   </div>
 
-  <div class="darkstrip">
-    <p class="lead" style="margin:0 0 14px">Auf dunklem Grund (Beispiele 3 · 4 · 5):</p>
-    <div class="darkgrid">
-      <div class="tile d">
-        <div class="mark">
-          <svg width="50" height="50" viewBox="0 0 48 48" fill="none" stroke-linecap="round">
-            <path d="M29.2 4.7A20 20 0 1 1 18.8 4.7" stroke="#f3efe7" stroke-width="1.6"/>
-            <circle cx="24" cy="3.4" r="2.5" fill="#b8a582"/>
-          </svg>
-        </div>
-        <div class="wm"><span class="name">Favaro</span><span class="tag">Zahnarzt · Balsthal</span></div>
+  <!-- Accent + dark -->
+  <p class="lead" style="margin:34px 0 14px">Mit Champagner-Akzent (ein Buchstabe) &amp; auf dunklem Grund – Beispiel Montserrat:</p>
+  <div class="grid">
+    <div class="tile plain">
+      <span class="ttl">Akzent-Detail</span>
+      <div class="lock">
+        <span class="z" style="font-family:'Montserrat';font-weight:400;font-size:1.15rem;letter-spacing:.34em">Zahnarzt</span>
+        <span class="w" style="font-family:'Montserrat';font-weight:800;font-size:3.7rem;letter-spacing:.02em">FAVAR<span style="color:var(--gold)">O</span></span>
       </div>
-      <div class="tile d">
-        <div class="mark">
-          <svg width="40" height="50" viewBox="0 0 40 50" fill="none" stroke-linecap="round">
-            <path d="M8 48V22a12 12 0 0 1 24 0v26" stroke="#f3efe7" stroke-width="1.6"/>
-            <circle cx="20" cy="12" r="2.4" fill="#b8a582"/>
-          </svg>
-        </div>
-        <div class="wm"><span class="name">Favaro</span><span class="tag">Zahnarzt · Balsthal</span></div>
-      </div>
-      <div class="tile d">
-        <div class="mark">
-          <svg width="44" height="50" viewBox="0 0 44 48" fill="none" stroke-linecap="round">
-            <path d="M22 5C34 14 34 34 22 43" stroke="#f3efe7" stroke-width="1.6"/>
-            <path d="M22 5C10 14 10 34 22 43" stroke="#b8a582" stroke-width="1.6"/>
-          </svg>
-        </div>
-        <div class="wm"><span class="name">Favaro</span><span class="tag">Zahnarzt · Balsthal</span></div>
+    </div>
+    <div class="tile" style="background:#232019;border-color:transparent">
+      <div class="lock">
+        <span class="z" style="font-family:'Montserrat';font-weight:400;font-size:1.15rem;letter-spacing:.34em;color:#b7ad9b">Zahnarzt</span>
+        <span class="w" style="font-family:'Montserrat';font-weight:800;font-size:3.7rem;letter-spacing:.02em;color:#f4f0e9">FAVARO</span>
       </div>
     </div>
   </div>
