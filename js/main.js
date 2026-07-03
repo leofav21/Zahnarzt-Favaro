@@ -33,9 +33,14 @@
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
-  /* ---- Scroll-Reveal-Animationen ---- */
+  /* ---- Scroll-Reveal-Animationen (ausfallsicher) ---- */
   const revealEls = document.querySelectorAll(".reveal");
+  const revealAll = function () {
+    revealEls.forEach(function (el) { el.classList.add("visible"); });
+  };
   if ("IntersectionObserver" in window && revealEls.length) {
+    // Elemente vorbereiten (verstecken) und beim Scrollen einblenden
+    document.documentElement.classList.add("reveal-on");
     const observer = new IntersectionObserver(
       function (entries) {
         entries.forEach(function (entry) {
@@ -48,8 +53,11 @@
       { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
     );
     revealEls.forEach(function (el) { observer.observe(el); });
+    // Sicherheitsnetz: falls die Scroll-Erkennung im Kontext nicht feuert
+    // (z. B. in einer Vorschau ohne eigenes Scrolling), nie etwas verstecken.
+    window.addEventListener("load", function () { setTimeout(revealAll, 1500); });
   } else {
-    revealEls.forEach(function (el) { el.classList.add("visible"); });
+    revealAll();
   }
 
   /* ---- Aktuelles Jahr im Footer ---- */

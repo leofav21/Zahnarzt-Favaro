@@ -367,12 +367,16 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .fab:hover { text-decoration: none; }
 
-/* ---------- Scroll Reveal ---------- */
-.reveal { opacity: 0; transform: translateY(28px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
-.reveal.visible { opacity: 1; transform: none; }
+/* ---------- Scroll Reveal (progressive enhancement) ----------
+   Inhalte sind standardmäßig sichtbar. Nur wenn JavaScript die Klasse
+   .reveal-on setzt, werden Elemente zunächst versteckt und dann sanft
+   eingeblendet – so bleibt nie etwas dauerhaft unsichtbar. */
+.reveal { transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.reveal-on .reveal { opacity: 0; transform: translateY(28px); }
+.reveal-on .reveal.visible { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) {
-  .reveal { opacity: 1; transform: none; transition: none; }
-  .tooth-illustration, .hero-stat-1, .hero-stat-2 { animation: none; }
+  .reveal-on .reveal { opacity: 1; transform: none; transition: none; }
+  .tooth-illustration { animation: none; }
   html { scroll-behavior: auto; }
 }
 
