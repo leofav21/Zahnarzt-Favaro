@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Favaro – Logo-Entwürfe</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --teal-900:#4a3a29; --teal-700:#8a6a45; --teal-600:#9a7a52;
+    --teal-400:#c2a175; --teal-300:#d9c2a0; --teal-50:#f3ebdd; --teal-100:#e9ddc9;
+    --ink:#362a1c; --muted:#8a7f6d; --line:#e8dfd0; --bg-soft:#f8f3ea;
+    --font-head:"Fraunces",serif; --font-body:"Inter",sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:var(--font-body);background:#fff;color:var(--ink);padding:40px}
+  h1{font-family:var(--font-head);font-weight:600;font-size:2rem;margin-bottom:6px}
+  .sub{color:var(--muted);margin-bottom:36px}
+  .variant{margin-bottom:52px}
+  .variant h2{font-family:var(--font-body);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--teal-600);margin-bottom:16px}
+  .rows{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  .swatch{border:1px solid var(--line);border-radius:16px;padding:34px 30px;display:flex;align-items:center;gap:24px;min-height:130px}
+  .swatch.light{background:#fff}
+  .swatch.soft{background:var(--bg-soft)}
+  .swatch.dark{background:var(--teal-900)}
+  .swatch.mocha{background:var(--teal-700)}
+  .caption{font-size:.75rem;color:var(--muted);margin-top:8px}
+  .icononly{display:flex;gap:20px;align-items:center;flex-wrap:wrap;margin-top:14px}
+  .icononly .box{width:76px;height:76px;display:grid;place-items:center;border:1px solid var(--line);border-radius:14px}
+  .icononly .box.dark{background:var(--teal-900);border-color:transparent}
+
+  /* ---- Wortmarke ---- */
+  .wm{display:flex;flex-direction:column;line-height:1}
+  .wm .name{font-family:var(--font-head);font-weight:600;font-size:1.9rem;letter-spacing:-.01em;color:var(--ink)}
+  .wm .tag{font-family:var(--font-body);font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+  .on-dark .name{color:#fff}
+  .on-dark .tag{color:var(--teal-300)}
+</style>
+</head>
+<body>
+  <h1>Favaro – Logo-Entwürfe</h1>
+  <p class="sub">Variante 2 (Monogramm-Emblem) &amp; Variante 3 (Zahn + F verschmolzen) · Beige-Palette</p>
+
+  <!-- ============ VARIANTE 2: MONOGRAMM-EMBLEM ============ -->
+  <div class="variant">
+    <h2>Variante 2 — Monogramm-Emblem</h2>
+    <div class="rows">
+      <div class="swatch light">
+        <!-- Emblem -->
+        <svg width="72" height="72" viewBox="0 0 72 72" aria-label="Favaro Emblem">
+          <defs>
+            <linearGradient id="v2a" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#9a7a52"/><stop offset="1" stop-color="#6f5537"/>
+            </linearGradient>
+          </defs>
+          <rect x="2" y="2" width="68" height="68" rx="20" fill="url(#v2a)"/>
+          <rect x="2" y="2" width="68" height="68" rx="20" fill="none" stroke="#c2a175" stroke-width="1.5" opacity=".5"/>
+          <text x="36" y="50" text-anchor="middle" font-family="Fraunces, serif" font-weight="600" font-size="42" fill="#f3ebdd">F</text>
+        </svg>
+        <div class="wm"><span class="name">Favaro</span><span class="tag">Zahnarztpraxis&nbsp;·&nbsp;Balsthal</span></div>
+      </div>
+
+      <div class="swatch dark on-dark">
+        <svg width="72" height="72" viewBox="0 0 72 72">
+          <rect x="2" y="2" width="68" height="68" rx="20" fill="#f3ebdd"/>
+          <text x="36" y="50" text-anchor="middle" font-family="Fraunces, serif" font-weight="600" font-size="42" fill="#6f5537">F</text>
+        </svg>
+        <div class="wm"><span class="name">Favaro</span><span class="tag">Zahnarztpraxis&nbsp;·&nbsp;Balsthal</span></div>
+      </div>
+    </div>
+    <div class="icononly">
+      <span class="caption">Nur Icon:</span>
+      <div class="box">
+        <svg width="52" height="52" viewBox="0 0 72 72"><rect x="2" y="2" width="68" height="68" rx="20" fill="url(#v2a)"/><text x="36" y="50" text-anchor="middle" font-family="Fraunces, serif" font-weight="600" font-size="42" fill="#f3ebdd">F</text></svg>
+      </div>
+      <div class="box dark">
+        <svg width="52" height="52" viewBox="0 0 72 72"><rect x="2" y="2" width="68" height="68" rx="20" fill="#f3ebdd"/><text x="36" y="50" text-anchor="middle" font-family="Fraunces, serif" font-weight="600" font-size="42" fill="#6f5537">F</text></svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ VARIANTE 3: ZAHN + F ============ -->
+  <div class="variant">
+    <h2>Variante 3 — Zahn + F verschmolzen</h2>
+    <div class="rows">
+      <div class="swatch soft">
+        <!-- Tooth with F knockout -->
+        <svg width="72" height="80" viewBox="0 0 72 80" aria-label="Favaro Zahn-Monogramm">
+          <defs>
+            <linearGradient id="v3a" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#9a7a52"/><stop offset="1" stop-color="#7c5f3d"/>
+            </linearGradient>
+            <path id="toothPath" d="M36 6c-8.5-6-20-5.5-25 1.5C6 15 8 27 10 37c1.8 8.8 3.5 20 7 26 2 3.4 6.5 2.6 8-1 2.4-6 3.5-14 7-15.5h6c3.5 1.5 4.6 9.5 7 15.5 1.5 3.6 6 4.4 8 1 3.5-6 5.2-17.2 7-26 2-10 4-22-1-29.5C61 .5 44.5 0 36 6Z"/>
+            <clipPath id="v3clip"><use href="#toothPath"/></clipPath>
+          </defs>
+          <use href="#toothPath" fill="url(#v3a)"/>
+          <!-- F knockout -->
+          <g clip-path="url(#v3clip)">
+            <path d="M27 24h20v7H35v6h10v7H35v13h-8V24Z" fill="#f3ebdd"/>
+          </g>
+        </svg>
+        <div class="wm"><span class="name">Favaro</span><span class="tag">Zahnarztpraxis&nbsp;·&nbsp;Balsthal</span></div>
+      </div>
+
+      <div class="swatch mocha on-dark">
+        <svg width="72" height="80" viewBox="0 0 72 80">
+          <path d="M36 6c-8.5-6-20-5.5-25 1.5C6 15 8 27 10 37c1.8 8.8 3.5 20 7 26 2 3.4 6.5 2.6 8-1 2.4-6 3.5-14 7-15.5h6c3.5 1.5 4.6 9.5 7 15.5 1.5 3.6 6 4.4 8 1 3.5-6 5.2-17.2 7-26 2-10 4-22-1-29.5C61 .5 44.5 0 36 6Z" fill="#f3ebdd"/>
+          <path d="M27 24h20v7H35v6h10v7H35v13h-8V24Z" fill="#8a6a45"/>
+        </svg>
+        <div class="wm"><span class="name">Favaro</span><span class="tag">Zahnarztpraxis&nbsp;·&nbsp;Balsthal</span></div>
+      </div>
+    </div>
+    <div class="icononly">
+      <span class="caption">Nur Icon:</span>
+      <div class="box">
+        <svg width="46" height="52" viewBox="0 0 72 80"><path d="M36 6c-8.5-6-20-5.5-25 1.5C6 15 8 27 10 37c1.8 8.8 3.5 20 7 26 2 3.4 6.5 2.6 8-1 2.4-6 3.5-14 7-15.5h6c3.5 1.5 4.6 9.5 7 15.5 1.5 3.6 6 4.4 8 1 3.5-6 5.2-17.2 7-26 2-10 4-22-1-29.5C61 .5 44.5 0 36 6Z" fill="url(#v3a)"/><path d="M27 24h20v7H35v6h10v7H35v13h-8V24Z" fill="#f3ebdd"/></svg>
+      </div>
+      <div class="box dark">
+        <svg width="46" height="52" viewBox="0 0 72 80"><path d="M36 6c-8.5-6-20-5.5-25 1.5C6 15 8 27 10 37c1.8 8.8 3.5 20 7 26 2 3.4 6.5 2.6 8-1 2.4-6 3.5-14 7-15.5h6c3.5 1.5 4.6 9.5 7 15.5 1.5 3.6 6 4.4 8 1 3.5-6 5.2-17.2 7-26 2-10 4-22-1-29.5C61 .5 44.5 0 36 6Z" fill="#f3ebdd"/><path d="M27 24h20v7H35v6h10v7H35v13h-8V24Z" fill="#8a6a45"/></svg>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
