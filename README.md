@@ -37,7 +37,7 @@ Alle Inhalte sind Platzhalter und sollten durch die echten Daten ersetzt werden:
 |-----|-----|
 | Telefonnummer `071 552 02 05` | `index.html` (Suche & Ersetzen) |
 | E-Mail `info@zahnarzt-favaro.ch` | `index.html` |
-| Adresse `Musterstrasse 1, 9524 Zuzwil SG` | `index.html` |
+| Adresse `Goldgasse 13, 4710 Balsthal` | `index.html` |
 | Team-Namen & Rollen | Sektion `#team` |
 | Öffnungszeiten | Sektionen `#praxis` und Footer |
 | Farben | `css/styles.css` → `:root` (z. B. `--teal-700`) |
